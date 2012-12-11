@@ -1,0 +1,23 @@
+{
+  "name": "dev",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+        "java" : {
+           "install_flavor":"oracle",
+           "jdk_version":"6",
+           "oracle" : {
+                  "accept_oracle_download_terms" : true
+            }
+           }
+  },
+  "chef_type": "role",
+  "run_list": [ "recipe[apt]","recipe[ark]", 
+                "recipe[java]", "recipe[git]", 
+                "recipe[tomcat]", "recipe[maven]",
+                 "recipe[mysql]" ],
+  "env_run_lists": {
+  }
+}
