@@ -1,0 +1,27 @@
+[submodule "cookbooks/tomcat"]
+	path = cookbooks/tomcat
+	url = http://github.com/opscode-cookbooks/tomcat
+[submodule "cookbooks/java"]
+	path = cookbooks/java
+	url = http://github.com/opscode-cookbooks/java
+[submodule "cookbooks/mysql"]
+	path = cookbooks/mysql
+	url = http://github.com/opscode-cookbooks/mysql
+[submodule "cookbooks/maven"]
+	path = cookbooks/maven
+	url = http://github.com/opscode-cookbooks/maven
+[submodule "cookbooks/git"]
+	path = cookbooks/git
+	url = http://github.com/opscode-cookbooks/git
+[submodule "cookbooks/ark"]
+	path = cookbooks/ark
+	url = http://github.com/opscode-cookbooks/ark
+[submodule "openmrs-core"]
+	path = openmrs-core
+	url = https://github.com/openmrs/openmrs-core
+[submodule "cookbooks/apt"]
+	path = cookbooks/apt
+	url = http://github.com/opscode-cookbooks/apt
+[submodule "cookbooks/openssl"]
+	path = cookbooks/openssl
+	url = http://github.com/opscode-cookbooks/openssl

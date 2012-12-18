@@ -6,18 +6,24 @@
   },
   "override_attributes": {
         "java" : {
-           "install_flavor":"oracle",
+           // "install_flavor":"oracle",
            "jdk_version":"6",
-           "oracle" : {
-                  "accept_oracle_download_terms" : true
-            }
-           }
+           "java_home":"/usr/lib/jvm/java-6-openjdk-amd64"
+           // , "oracle" : {
+           //        "accept_oracle_download_terms" : true
+           //  }
+            },
+          "mysql": {
+            "server_root_password": "password",
+            "server_repl_password": "password",
+            "server_debian_password": "password"
+          }
   },
   "chef_type": "role",
-  "run_list": [ "recipe[apt]","recipe[ark]", 
-                "recipe[java]", "recipe[git]", 
-                "recipe[tomcat]", "recipe[maven]",
-                 "recipe[mysql]" ],
+  "run_list": [ "recipe[apt]","recipe[ark]", "recipe[openssl]",
+                 "recipe[java]", "recipe[git]", 
+                 "recipe[tomcat]", "recipe[maven]",
+                 "recipe[mysql::server]","recipe[mysql::client]" ],
   "env_run_lists": {
   }
 }
